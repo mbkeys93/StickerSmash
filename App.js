@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
-//import ImageViewer from 'components/ImageViewer.js';
+import ImageViewer from './components/ImageViewer.js';
 
 const PlaceholderImage = require('./assets/images/background-image.png');
 const PlaceholderImage2 = require('./assets/images/AI_maple_bits.jpeg');
@@ -10,7 +10,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.imageContainer}>
-        <ImageViewer source={PlaceholderImage2} />
+        <ImageViewer placeholderImageSource={PlaceholderImage2} />
       </View>   
       <StatusBar style="auto" />
     </View>
